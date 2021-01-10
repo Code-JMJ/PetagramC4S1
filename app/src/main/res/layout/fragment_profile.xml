@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad">
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/civProfilePic"
+                    android:layout_width="@dimen/width_profile_pic"
+                    android:layout_height="@dimen/height_profile_pic"
+                    android:src="@drawable/grogut"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="@dimen/border_widht_profile_pic"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="@dimen/shadow_rad_profile_pic"
+                    app:civ_shadow_color="@color/colorPrimaryDark"
+                    android:layout_gravity="center|start"/>
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grogut"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="top|start"
+                    android:layout_marginTop="@dimen/margin_top_profile_name"
+                    android:layout_marginStart="@dimen/margin_start_profile_name"
+                    android:layout_marginLeft="@dimen/margin_left_profile_name" />
+
+                <TextView
+                    android:id="@+id/tvProfileUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="grogut8"
+                    android:layout_gravity="top|start"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginLeft="150dp" />
+
+                <TextView
+                    android:id="@+id/tvProfileDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_profile"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_gravity="top|start"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="@dimen/marginstart_description_profile"
+                    android:layout_marginLeft="@dimen/margin_left_description_profile" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/post"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_top_followers"
+                android:paddingBottom="@dimen/padding_botton_followers"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:inputType="number"
+                        style="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                        android:id="@+id/tvPostLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="POSTS"
+                        android:textAllCaps="true"
+                        style="@style/TextAppearance.AppCompat.Body2"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorFollowers"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_top_followers"
+                android:paddingBottom="@dimen/padding_botton_followers"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFollowers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/followers"
+                        android:inputType="number"
+                        style="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                        android:id="@+id/tvFollowersLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/followers_label"
+                        android:textAllCaps="true"
+                        style="@style/TextAppearance.AppCompat.Body2"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorFollowing"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_top_following"
+                android:paddingBottom="@dimen/padding_botton_following"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFollwing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/following"
+                        android:inputType="number"
+                        style="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                        android:id="@+id/tvFollowingLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/following_label"
+                        android:textAllCaps="true"
+                        style="@style/TextAppearance.AppCompat.Body2"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFragmentProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="?attr/actionBarSize"
+                android:clipToPadding="false"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

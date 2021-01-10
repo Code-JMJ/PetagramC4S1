@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardView.Light"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/ivFavPetPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grogut"
+        app:srcCompat="@drawable/grogut" />
+
+    <TextView
+        android:id="@+id/tvFavPetName"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:text="Grogut" />
+
+    <Button
+        android:id="@+id/favBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_red_favorite_24"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
+
+</androidx.cardview.widget.CardView>

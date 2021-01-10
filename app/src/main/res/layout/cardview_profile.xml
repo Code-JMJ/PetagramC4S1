@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvFragmentProfile"
+    android:layout_width="@dimen/cv_profile_width"
+    android:layout_height="@dimen/cv_profile_height"
+    style="@style/CardView.Light"
+    app:cardCornerRadius="@dimen/cv_profile_corner_rad"
+    android:elevation="3dp"
+    android:layout_marginStart="@dimen/cv_profile_margin_start"
+    android:layout_marginEnd="@dimen/cv_profile_margin_end"
+    android:layout_marginLeft="@dimen/cv_profile_margin_start"
+    android:layout_marginRight="@dimen/cv_profile_margin_end"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivPetPic"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/terror"
+            android:transitionName="@string/pic_transition"
+            app:srcCompat="@drawable/terror" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p_likes"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ivFacBtn"
+                android:layout_width="@dimen/cv_profile_image_width"
+                android:layout_height="@dimen/cv_profile_image_height"
+                android:background="@drawable/ic_red_favorite_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

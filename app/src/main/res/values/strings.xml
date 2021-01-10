@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="action_contact">Contactos</string>
+    <string name="action_about">Acerca De</string>
+    <string name="action_favorites">Favoritos</string>
+    <string name="tab_text_1">Inicio</string>
+    <string name="tab_text_2">perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">En blanco</string>
+    <string name="full_name">Nombre Completo</string>
+    <string name="email">Email</string>
+    <string name="comment">Mensaje</string>
+    <string name="send">Enviar</string>
+    <string name="description_profile">.-.</string>
+    <string name="followers">5</string>
+    <string name="followers_label">Seguidores</string>
+    <string name="following">8</string>
+    <string name="following_label">Siguiendo</string>
+    <string name="p_likes">5</string>
+    <string name="p_name">Grogut</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="show_notifications">Show notifications</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Firebase</string>
+    <string name="channelId">my_channel_01</string>
+    <string name="channel_name">Instagram Likes</string>
+    <string name="channel_description">Notifies a new like.</string>
+    <string name="pic_transition">pic transition</string>
+
+    <string name="acerca_d">Trabajando con el API de Instagram</string>
+</resources>
